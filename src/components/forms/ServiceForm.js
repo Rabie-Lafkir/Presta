@@ -40,7 +40,7 @@ const ServiceForm = ({ modify = false, serviceData }) => {
 
   useEffect(() => {
     getAssetTypes();
-  }, []);
+  });
 
   return (
     <form className="w-full h-fit" action={updateService}>
