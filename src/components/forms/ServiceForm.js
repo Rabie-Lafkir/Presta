@@ -177,7 +177,7 @@ const ServiceForm = ({ modify = false, serviceData }) => {
           />
         </div>
         <div className="divider  border-blue-950 min-w-full col-span-2"></div>
-        <div className="w-full flex flex-col items-start mb-5">
+        <div className="w-full flex flex-col items-start mb-5  col-span-2">
           <label className="text-sm font-semibold text-blue-600 mb-2">
             Description
           </label>
@@ -185,6 +185,7 @@ const ServiceForm = ({ modify = false, serviceData }) => {
             type="text"
             name="description"
             placeholder="Donner une description au service"
+            rows={6}
             defaultValue={serviceData?.description}
             className={
               "textarea textarea-bordered textarea-primary w-full text-blue-950 bg-white disabled:bg-white disabled:placeholder-gray-500 disabled:text-gray-500 disabled:border-blue-400"
